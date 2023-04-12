@@ -18,7 +18,7 @@ const clearAuthHeader = () => {
  * body: { name, email, password }
  */
 export const register = createAsyncThunk(
-  'auth/register',
+  'auth/registration',
   async (credentials, thunkAPI) => {
     try {
       const res = await axios.post('/users/signup', credentials);

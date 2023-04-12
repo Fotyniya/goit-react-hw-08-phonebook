@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectAllContacts } from "redux/contacts/selectors";
 import { addContact } from 'redux/contacts/operations';
 
-export const ContactEditor = () => {
+export default function ContactEditor() {
   const [name, setName] = useState('');
     const [number, setNumber] = useState(0);
     const dispatch = useDispatch();

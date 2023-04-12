@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
 
-export const Navigation = () => {
+export default function Navigation () {
     const { isLoggedIn } = useAuth();
   
     return (
