@@ -1,9 +1,10 @@
 import RegisterForm from 'components/RegisterForm/RegisterForm';
+import { SubTitle } from './pages.styled';
 
 export default function RegistrationPage() {
   return (
     <div>
-        <h2>Registration</h2>
+        <SubTitle>Registration</SubTitle>
         <RegisterForm />
     </div>
   );

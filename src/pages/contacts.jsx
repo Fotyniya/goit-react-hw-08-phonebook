@@ -6,6 +6,8 @@ import ContactEditor from 'components/ContactEditor/ContactEditor';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectLoading } from 'redux/contacts/selectors';
 
+import { SubTitle } from './pages.styled';
+
 export default function ContactsPage() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectLoading);
@@ -16,9 +18,7 @@ export default function ContactsPage() {
 
   return (
     <>
-
-        <title>Your Contacts</title>
-      
+      <SubTitle>Your Contacts</SubTitle>
       <ContactEditor />
       <div>{isLoading && 'Request in progress...'}</div>
       <ContactList />

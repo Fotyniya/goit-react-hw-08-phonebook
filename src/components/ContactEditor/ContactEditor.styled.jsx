@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Label = styled.label`
+export const FormLabel = styled.label`
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -8,7 +8,6 @@ export const Label = styled.label`
     margin-bottom: 8px;
     color: #33691E;
 `;
-
 export const Input = styled.input`
     height: 40px;
     margin-bottom: 8px;
@@ -16,7 +15,6 @@ export const Input = styled.input`
     color: #33691E;
     backgroundColor: #DCEDC8;
 `;
-
 export const Button = styled.button`
     border: 1px solid #33691E;
     color: #33691E;
