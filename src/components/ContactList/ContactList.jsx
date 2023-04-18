@@ -6,13 +6,13 @@ import { selectAllContacts, selectFilter } from 'redux/contacts/selectors';
 export default function ContactList() {
   const contacts = useSelector(selectAllContacts);
   const filter = useSelector(selectFilter);
- 
+ //console.log (contacts)
   const filtredContacts = contacts 
     .filter(item => (item.name).toUpperCase().includes((filter).toUpperCase()));
 
   return (
     <>
-    <Filter/>
+    { contacts.length > 0 && <Filter/>}
     <ul style={{listStyle: 'none', padding: 0 }}>
       {filtredContacts.map(({ id, name, number }) => (
         <li key={id} style={{marginBottom: 10, fontSize: 20 }} >
